@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ISET STUDENTS</title>
+
+  <link rel="stylesheet" type="text/css"
+  href="style.css">
+  <meta charset="UTF-8">
+<style>
+  form {
+    display: flex;
+    flex-direction: colmn;
+    align-items: center;
+  }
+   input[type="submit"]{
+    margin-top:10px;
+   }
+</style>
+         
+<h1>WELCOME TO ISET STUDENTS!</h1>
+    <h2>calcule du moyenne</h2>
+   <form>
+        <label for="level">Level:</label>
+          <select name="level" id="level">
+            <option value="L1">L1</option>
+              <option value="L2">L2</option>
+          </select>
+             <br>
+             <label for="semestre">Semestre</label>
+             <select id="semestre">
+               <option value="S1">S1</option>
+               <option value="S2">S2</option>
+               <option value="S3">S3</option>
+               <option value="S4">S4</option>
+              </select>
+             <br>
+   <button type="button"
+           onclick="calculer()">Calculer</button>
+   </form>
+   <p id="resultat"></p>
+   <script>
+     function Calculer() {
+       const level = document.getElementByld("level").value;
+       const semestre = document.getElementByld("semestre").value;
+       if (level === "L1" && semestre === "S1") {
+          const TPINFO = parseFloat(prompt("Entrez la note du TPINFO:"));
+          const TPMICROBIOLOGIE = parseFloat(prompt("Entrez la note du TPMICROBIOLOGIE:"));
+          const TPPHYSIQUE = parseFloat(prompt("Entrez la note du TPPHYSIQUE:"));
+          const TPBIOLOGIE= parseFloat(prompt("Entrez la note du TPBIOLOGIE:"));
+          const TPCHIMIE = parseFloat(prompt("Entrez la note du TPCHIMIE:"));
+          const BIOLOGIE = parseFloat(prompt("Entrez la note du BIOLOGIE:"));
+          const PHYSIQUE = parseFloat(prompt("Entrez la note du PHYSIQUE:"));
+          const   CHIMIE = parseFloat(prompt("Entrez la note du CHIMIE:"));
+          const MATHSTATISTIQUE = parseFloat(prompt("Entrez la note du MATHSTATISTIQUE:"));
+          const INFORMATIQUE = parseFloat(prompt("Entrez la note du INFORMATIQUE:"));
+          const MICROBIOLOGIE = parseFloat(prompt("Entrez la note du MICROBIOLOGIE:"));
+          const GENETIQUE = parseFloat(prompt("Entrez la note du GENETIQUE:"));
+          const FRANCAIS = parseFloat(prompt("Entrez la note du FRANCAIS:"));
+          const ANGLAIS = parseFloat(prompt("Entrez la note du ANGLAIS:"));
+       
+
+          const module1 = (3*FRANCAIS+3*ANGLAIS)/6;
+          const module2 = (5*MATHSTATISTIQUE+3*INFORMATIQUE+TPINFO)/9;
+          const module3 = (4*CHIMIE+4*PHYSIQUE+TPCHIMIE+TPPHYSIQUE)/10;
+          const module4 = (4*BIOLOGIE+4*(MICROBIOLOGIE+GENETIQUE)+TPBIOLOGIE+TPMICROBIOLOGIE)/10;
+
+          const moyenne = (module1+module2+module3+module4)/4;
+          document.getElementById("resultat").innerHTML = "La moyenne est de:" + moyenne.tofixed(2);
+       }
+         else if(level === "L1" && semestre==="S2"){
+          const TPINFO = parseFloat(prompt("Entrez la note du TPINFO:"));
+          const TPPPV = parseFloat(prompt("Entrez la note du TPPPV:"));
+          const TPSTA= parseFloat(prompt("Entrez la note du TPSTA:"));
+          const TPPSA= parseFloat(prompt("Entrez la note du TPPSA:"));
+          const TPGEM = parseFloat(prompt("Entrez la note du TPGEM:"));
+          const TPGAB = parseFloat(prompt("Entrez la note du TPGAB:"));
+          const PPV = parseFloat(prompt("Entrez la note du PPV:"));
+          const STA = parseFloat(prompt("Entrez la note du STA:"));
+          const PSA = parseFloat(prompt("Entrez la note du PSA:"));
+          const INFORMATIQUE = parseFloat(prompt("Entrez la note du INFORMATIQUE:"));
+          const GEM = parseFloat(prompt("Entrez la note du GEM:"));
+          const GAB = parseFloat(prompt("Entrez la note du GAB:"));
+          const FRANCAIS = parseFloat(prompt("Entrez la note du FRANCAIS:"));
+          const ANGLAIS = parseFloat(prompt("Entrez la note du ANGLAIS:"));
+       
+
+          const modul1 = (3*FRANCAIS+3*ANGLAIS)/6;
+          const modul2 = (3*PPV+3*INFORMATIQUE+TPINFO+TPPPV)/8;
+          const modul3 = (3*STA+3*PSA+TPSTA+TPPSA)/8;
+          const modul4 = (3*GAB+3*GEM+TPGAB+TPGEM)/8;
+
+
+          const moyene = (module1+module2+module3+module4)/4;
+          document.getElementById("resultat").innerHTML = "La moyenne est de:" + moyenne.tofixed(2);
+         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+           
+
+       
+     }
+
+
+    </script>
+        
+<div class="main" >
+  <div class="navbar">
+    <div class="icon">
+      <h1 class="logo">ISET ROSSO</h1>
+    </div>
+
+    <div class="menu">
+      <ul>
+          <li><a href="#HOME">HOME</a></li>
+          <li><a href="#CONTACT">CONTACT</a></li>
+          <li><a href="#SERVICE">SERVICE</a></li>
+          <li><a href="devlopper par NIANGSAMBA a iset rosso">ABOUT</a></li>
+          <li><a href="#NIANGSAMBA">DESIGN</a></li>
+      </ul>
+    <div  class="content">
+        <p class="par">ce site a etait cree pour les etudiants de L'INSTITUT SUPERIEURE D'ENSEIGNEMENT TECHNOLOGIQUE A ROSSO <b> en fin qu'ils puissent calculer leurs moyennes dans les differrents semestres </b> </p>
+            <div class="icon">
+              <a href="institut superirieur d'enseignement technologique a rosso"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="institut superirieur d'enseignement technologique a rosso"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+    </div>
+    </div>
+  </div>
+</div>
+              <!--language switch-->
+             <p>switch to : <a href="lang=fr">french</a></p>
+      
+            </body>
+             </html>
+       
+
+
+
+
+
+
